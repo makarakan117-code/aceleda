@@ -25,6 +25,21 @@ header{
     position: relative;
 }
 
+
+
+
+header {
+    /* ... កូដចាស់របស់អ្នក ... */
+    position: relative;
+    z-index: 1001; /* ដាក់ឲ្យខ្ពស់ជាងគេ */
+}
+
+.navigation {
+    /* ... កូដចាស់របស់អ្នក ... */
+    position: relative; /* បន្ថែមនេះ */
+    z-index: 1000; /* ដាក់ឲ្យខ្ពស់ជាង Section1 */
+}
+
 header .logo{
     height: 48%;
     width: 21%;
@@ -100,6 +115,11 @@ header .nav .ul .li .drop1{
     border: 1px solid gray;
     visibility: hidden;
     opacity: 0;
+
+
+
+
+    z-index: 9999;
 }
 
 header .nav .ul .li .drop1 ul{
@@ -198,7 +218,6 @@ header .nav .ul .li:nth-child(4):hover .drop1{
 .navigation .nav .ul .li .a:hover{
     color: var(--yellow-color);
 }
-
 .navigation .nav .ul .li .a .fa-caret-up{
     transform: rotate(180deg);
     transition: 200ms all ease-in-out;
@@ -211,7 +230,7 @@ header .nav .ul .li:nth-child(4):hover .drop1{
 .navigation .nav .ul .li .drop2{
     position: absolute;
     left: 0;
-    top: 90%;
+    top: 100%;
     width: 280px;
     height: 0;
     overflow: hidden;
@@ -222,7 +241,7 @@ header .nav .ul .li:nth-child(4):hover .drop1{
     visibility: hidden;
     opacity: 0;
     
-     z-index: 99;
+     z-index: 9999;
 }
 
 .navigation .nav .ul .li .drop2 ul{
@@ -279,6 +298,9 @@ header .nav .ul .li:nth-child(4):hover .drop1{
     padding-inline: var(--pd-inline);
     box-shadow: 3px  5px 6px rgba(0, 0, 0, 0.845);
     position: relative;
+
+    z-index: 1; /* កំណត់ឲ្យទាបបំផុត */
+
 }
 
 .swiper {
